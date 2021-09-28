@@ -50,7 +50,7 @@ def chirp(tlen,fstart,fstop,phase,fs):
     b = (fstop-fstart)/tlen
     
     # Change what it returns
-    return [0]
+    return np.zeros_like(t)
 
 def corr(a,b):
     # Function to calculate circular correlation between two series
@@ -83,7 +83,7 @@ def corrFFT(a,b):
     # Make output array
     # Arrange based on length of signals
 
-    return [0]
+    return np.zeros(max(len(a), len(b)))
     
 def loadData(path):
     # Reads in 20180819-215243 trace file, returns as 2D array
