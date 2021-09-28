@@ -21,7 +21,7 @@ def arangeT(start, stop, fs):
     c = start
     while c <= stop:
         seq = np.append(seq,c)
-        c += 1/fs
+        c += 1.0/fs
         
     return seq
 
